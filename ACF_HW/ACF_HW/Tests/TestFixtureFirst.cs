@@ -51,5 +51,23 @@ namespace ACF_HW.Tests
             .RunPlayHistory()
             .CheckItemsBecomingActiveFromTopToBottom();
         }
+
+        [Test]
+        [Description("On the page https://www.gismeteo.ua/ua/maps/eur/temp/ create " +
+            "custom component (class in your project) for dropdown list " +
+            "for selecting timezone in top right corner with method 'Set' " +
+            "wich will click on the select and select specified value. " +
+            "Then write test that will use this component and check that " +
+            "it works correctly.")]
+        public void Task3()
+        {
+            var page = Go.To<TemperaturePage>();
+            for (int i = -12; i <= 12; i++)
+            {
+                string index = i.ToString();
+                page.TimeZone.Set(index);
+                page.TimeZone.Should.Contain(index);
+            }
+        }
     }
 }

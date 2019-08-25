@@ -75,7 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfig.cs" />
-    <Compile Include="Components\CustomDropDown.cs" />
+    <Compile Include="Components\CustomTimeZoneSelect.cs" />
     <Compile Include="Pages\TemperaturePage.cs" />
     <Compile Include="Pages\TwoWeeksPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

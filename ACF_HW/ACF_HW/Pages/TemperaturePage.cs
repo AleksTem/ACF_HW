@@ -38,9 +38,8 @@ namespace ACF_HW.Pages
             return this;
         }
 
-        [FindByClass(".dd_cnt.float_right")]
-        public CustomDropDown<_> DdCnt { get; set; }
-
+        [FindByCss(".dd_cnt.float_right")]
+        public CustomTimeZoneSelect<_> TimeZone { get; set; }
     }
 
 }
