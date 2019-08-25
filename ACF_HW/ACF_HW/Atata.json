@@ -1,0 +1,28 @@
+{
+  "drivers": [
+    {
+      "type": "chrome",
+      "options": {
+        "arguments": [ "start-maximized" ]
+      }
+    }
+  ],
+  "culture": "en-US",
+  "useNUnitTestName": true,
+  "logNUnitError": true,
+  "verificationTimeout": 10,
+  "baseUrl": "https://www.gismeteo.ua/",
+  "takeScreenshotOnNUnitError": false,
+  "logConsumers": [
+    {
+      "type": "nunit",
+      "minLevel": "Info",
+      "sectionFinish": false
+    },
+    {
+      "type": "nlog",
+      "minLevel": "Trace",
+      "sectionFinish": false
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACF_HW", "ACF_HW\ACF_HW.csproj", "{FA563B0A-E401-4CE0-98F6-FB935415EF73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COE.Core", "..\..\coe-qa-teaminternational-dotnet\COE.Core\COE.Core.csproj", "{77A07883-6D2F-4355-BAAF-790045CD75FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA563B0A-E401-4CE0-98F6-FB935415EF73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA563B0A-E401-4CE0-98F6-FB935415EF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA563B0A-E401-4CE0-98F6-FB935415EF73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA563B0A-E401-4CE0-98F6-FB935415EF73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A07883-6D2F-4355-BAAF-790045CD75FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A07883-6D2F-4355-BAAF-790045CD75FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A07883-6D2F-4355-BAAF-790045CD75FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A07883-6D2F-4355-BAAF-790045CD75FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {695D7684-BD9B-4BAA-8436-F2F01B086C33}
+	EndGlobalSection
+EndGlobal
