@@ -2,13 +2,18 @@
 
 namespace ACF_HW.Components
 {
+    /// <summary>
+    /// Represents Timezone element.
+    /// </summary>
+    /// <typeparam name="TOwner">The type of the owner page object.</typeparam>
+    [ControlDefinition("div[contains(@class, 'js_dropmenu')]", ComponentTypeName = "timezone dropdown")]
     [FindSettings(ScopeSource = ScopeSource.Parent)]
-    [ControlDefinition("div[contains(@class, 'js_dropmenu')]")]
     [TermFindSettings(Case = TermCase.Snake)]
     public class CustomTimeZoneSelect<TOwner> : Select<TOwner>
         where TOwner : PageObject<TOwner>
     {
-        protected Clickable<TOwner> Title { get; set; }
+        [FindByCss("span.js_timezone_title")]
+        protected Clickable<TOwner> TimezoneTitle { get; set; }
 
         protected Clickable<TOwner> DdBtn { get; set; }
 
@@ -22,7 +27,7 @@ namespace ACF_HW.Components
 
         protected override string GetValue()
         {
-            return Title.Content.Value.Replace("UTC ", "").Replace("−", "-");
+            return TimezoneTitle.Attributes["data-tz"].Value;
         }
     }
 }

@@ -66,7 +66,7 @@ namespace ACF_HW.Tests
             {
                 string index = i.ToString();
                 page.TimeZone.Set(index);
-                page.TimeZone.Should.Contain(index);
+                page.TimeZone.Should.Equal(index);
             }
         }
     }
